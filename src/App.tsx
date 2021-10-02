@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+type AppProps = {
+  name: string,
+  children?: React.ReactNode,
+  style?: React.CSSProperties
+}
+
+function App(props: AppProps) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header" style={{border: '1px solid red', ...props.style}}>
+        {props.name}
+        {props.children}
       </header>
     </div>
   );
 }
 
-export default App;
+const Application = () => <App name="Fabrizio" children={<h1>Children</h1>} style={{background: 'blue'}}/>
+
+export default Application;
