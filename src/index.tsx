@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Alert } from './Alert';
+import { Country } from './Country/Country';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Application /> */}
-    <Alert/>
+    {/* <Alert/> */}
+    <Country/>
   </React.StrictMode>,
   document.getElementById('root')
 );
