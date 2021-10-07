@@ -1,0 +1,23 @@
+.pizza-calculation{
+    width: auto;
+    height: 200px;
+    margin: 10px 30px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-calculation p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.pizza-calculation .number{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.pizza-calculation .caption{
+    font-size: 20px;
+}

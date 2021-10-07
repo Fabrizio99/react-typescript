@@ -1,0 +1,12 @@
+.pizza-calculator > *{
+    display: block;
+    margin:  auto;
+}
+.pizza-calculator label{
+    margin-bottom: 10px;
+}
+.pizza-calculator input{
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    width: 80%;
+}

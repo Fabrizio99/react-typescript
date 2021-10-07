@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Country } from './Country/Country';
 import './index.css';
+import { PizzaPage } from './Pizza/PizzaPage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Application /> */}
     {/* <Alert/> */}
-    <Country/>
+    {/* <Country/> */}
+    <PizzaPage/>
   </React.StrictMode>,
   document.getElementById('root')
 );
