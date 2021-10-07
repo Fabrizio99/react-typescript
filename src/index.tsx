@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ColorPage } from './Color/ColorPage';
+import { ThemeProvider } from './Context/theme-context';
 import './index.css';
-import { PizzaPage } from './Pizza/PizzaPage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -9,7 +10,10 @@ ReactDOM.render(
     {/* <Application /> */}
     {/* <Alert/> */}
     {/* <Country/> */}
-    <PizzaPage/>
+    {/* <PizzaPage/> */}
+    <ThemeProvider>
+      <ColorPage/>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
