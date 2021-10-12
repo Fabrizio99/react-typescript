@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ColorPage } from './Color/ColorPage';
-import { ThemeProvider } from './Context/theme-context';
+import { RGBContextProvider } from './Color/context';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -11,9 +11,12 @@ ReactDOM.render(
     {/* <Alert/> */}
     {/* <Country/> */}
     {/* <PizzaPage/> */}
-    <ThemeProvider>
+    {/* <ThemeProvider> */}
+      {/* <ColorPage/> */}
+    {/* </ThemeProvider> */}
+    <RGBContextProvider>
       <ColorPage/>
-    </ThemeProvider>
+    </RGBContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
