@@ -1,0 +1,27 @@
+.primary, .seconday, .destructive{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.primary{
+    background-color: rgb(23, 129, 250);
+}
+.seconday{
+    background-color: rgb(66, 248, 203);
+}
+.destructive{
+    background-color: rgb(255, 0, 0);
+}
+
+h1{
+    text-align: center;
+}
+
+.button-container{
+    margin: 100px auto;
+    width: min-content;
+    display: flex;
+}
+
+button{
+    margin-right: 10px;
+}
