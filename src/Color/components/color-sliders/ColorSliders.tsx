@@ -1,9 +1,11 @@
-import React, { ChangeEvent, useContext } from 'react';
-import { RGBContext } from '../../context';
+// import React, { ChangeEvent, useContext } from 'react';
+// import { RGBContext } from '../../context';
+import React, { ChangeEvent } from 'react';
+import { useContext } from '../../context';
 import { ColorSlider } from '../color-slider/ColorSlider';
 
 export const ColorSliders = () => {
-    const { red, green, blue, dispatch } = useContext(RGBContext);
+    const { red, green, blue, dispatch } = useContext();
 
   const adjustRed = (event: ChangeEvent<HTMLInputElement>) => {
     dispatch({ type: 'ADJUST_RED', payload: +event.target.value });

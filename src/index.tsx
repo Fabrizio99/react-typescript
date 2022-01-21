@@ -4,6 +4,9 @@ import { ButtonPage } from './Buttons/ButtonPage';
 import { CharacterPage } from './Character/CharacterPage';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { RGBContextProvider } from './Color/context';
+import { ColorPage } from './Color/ColorPage';
+import { HookPage } from './Hooks/HookPage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +22,9 @@ ReactDOM.render(
       <ColorPage/>
     </RGBContextProvider> */}
     {/* <CharacterPage/> */}
-    <ButtonPage/>
+
+    <HookPage/>
+    {/* <ButtonPage/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

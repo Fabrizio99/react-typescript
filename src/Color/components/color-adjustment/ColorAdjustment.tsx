@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { ChangeEvent, useContext } from 'react';
-import { RGBContext } from '../../context';
+// import { ChangeEvent, useContext } from 'react';
+// import { RGBContext } from '../../context';
+import { ChangeEvent } from 'react';
+import { useContext } from '../../context';
 
 
 export interface AdjustmentInputProps {
@@ -15,7 +17,8 @@ export interface ColorAdjustmentProps {
 }
 
 export const ColorAdjustment = ({ Adjustment }: ColorAdjustmentProps) => {
-  const { red, green, blue, dispatch } = useContext(RGBContext);
+  // const { red, green, blue, dispatch } = useContext(RGBContext);
+  const { red, green, blue, dispatch } = useContext();
 
   const adjustRed = (event: ChangeEvent<HTMLInputElement>) => {
     dispatch({ type: 'ADJUST_RED', payload: +event.target.value });
